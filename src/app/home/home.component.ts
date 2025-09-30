@@ -64,11 +64,11 @@ import { portfolioData } from '../shared/data';
               <!-- Add links under Exab LMS -->
               <div *ngIf="p.name === 'Exab LMS'" class="project-links" style="margin-top:.75rem;display:flex;gap:.5rem;flex-wrap:wrap;">
                 <a href="#" class="project-link" (click)="openProjectLink($event, 'https://training.kawla.gov.sa/home')">
-                  <img src="/lms2.png" alt="Project Link 1" class="link-image" />
+                  <img src="lms2.png" alt="Project Link 1" class="link-image" />
                   <span class="link-text">King Abdulaziz</span>
                 </a>
                 <a href="#" class="project-link" (click)="openProjectLink($event, 'https://tr.moh.gov.sa/home')">
-                  <img src="/lms1.png" alt="Project Link 2" class="link-image" />
+                  <img src="lms1.png" alt="Project Link 2" class="link-image" />
                   <span class="link-text">Ministry Of Health</span>
                 </a>
               </div>
@@ -393,9 +393,9 @@ export class HomeComponent {
   
   protected getProjectBackgroundImage(index: number): string {
     const images = [
-      '/exab-lms.png',
-      '/municipality-violations.png', 
-      '/ticketing-system.png'
+      'exab-lms.png',
+      'municipality-violations.png', 
+      'ticketing-system.png'
     ];
     const imageUrl = images[index % images.length];
     return `url('${imageUrl}')`;
