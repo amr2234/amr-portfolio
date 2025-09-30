@@ -1,0 +1,16 @@
+<svg width="400" height="240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#f9fafb"/>
+  <rect x="20" y="20" width="360" height="40" fill="#dc2626" rx="4"/>
+  <text x="200" y="45" text-anchor="middle" fill="white" font-family="Arial" font-size="14" font-weight="bold">Municipality Violations System</text>
+  
+  <rect x="20" y="80" width="100" height="120" fill="#fee2e2" rx="4"/>
+  <text x="70" y="145" text-anchor="middle" fill="#dc2626" font-family="Arial" font-size="12">Violations</text>
+  
+  <rect x="140" y="80" width="100" height="120" fill="#fef3c7" rx="4"/>
+  <text x="190" y="145" text-anchor="middle" fill="#d97706" font-family="Arial" font-size="12">Committees</text>
+  
+  <rect x="260" y="80" width="100" height="120" fill="#dcfce7" rx="4"/>
+  <text x="310" y="145" text-anchor="middle" fill="#16a34a" font-family="Arial" font-size="12">Reports</text>
+  
+  <text x="200" y="220" text-anchor="middle" fill="#6b7280" font-family="Arial" font-size="12">Real-time Notifications</text>
+</svg>

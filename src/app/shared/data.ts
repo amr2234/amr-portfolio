@@ -1,0 +1,204 @@
+export interface PortfolioData {
+  personal: {
+    name: string;
+    title: string;
+    tagline: string;
+    location: string;
+    email: string;
+    phone: string;
+    iqama: string;
+    linkedin: string;
+    nationality: string;
+    birthdate: string;
+    status: string;
+  };
+  hero: {
+    headline: string;
+    subheadline: string;
+    ctas: { label: string; href: string }[];
+  };
+  about: {
+    summary: string;
+  };
+  services: { icon: string; title: string; desc: string }[];
+  experience: {
+    company: string;
+    role: string;
+    dates: string;
+    location: string;
+    details: string[];
+  }[];
+  projects: {
+    name: string;
+    dates: string;
+    location: string;
+    details: string[];
+    image: string;
+  }[];
+  education: {
+    degree: string;
+    university: string;
+    graduation: string;
+  }[];
+  courses: {
+    title: string;
+    provider: string;
+    dates: string;
+    hours: number;
+    modules: string[];
+  }[];
+  skills: { name: string; level: number }[];
+}
+
+export const portfolioData: PortfolioData = {
+  personal: {
+    name: 'Amr Mohamed',
+    title: '.NET Developer',
+    tagline: 'Building clean, scalable backends and modern UIs.',
+    location: 'Riyadh, Saudi Arabia',
+    email: 'Amr.salama223@outlook.com',
+    phone: '0567691122',
+    iqama: 'Transferable Iqama',
+    linkedin: 'https://www.linkedin.com/in/amr-salama-37282722b',
+    nationality: 'Egyptian',
+    birthdate: '23/01/2001',
+    status: 'Single',
+  },
+  hero: {
+    headline: 'Hi, I’m Amr Mohamed',
+    subheadline: '.NET Developer | Full Stack Engineer',
+    ctas: [
+      { label: 'Download CV', href: '/Amr-Mohamed-CV.pdf' },
+      { label: 'Contact Me', href: '#contact' },
+    ],
+  },
+  about: {
+    summary:
+      'Highly skilled and motivated .NET Developer with 3 years of experience in designing, developing, and maintaining web applications. Certified in building modern, responsive applications using Angular, HTML, CSS, and JavaScript for the frontend and ASP.NET Core APIs, SQL Server, and Entity Framework for the backend. Dedicated to writing clean, scalable code with strong design principles and continuous learning.',
+  },
+  services: [
+    { icon: 'Code', title: 'Backend Development', desc: 'ASP.NET Core APIs with EF Core & SQL Server.' },
+    { icon: 'Signal', title: 'Real-time Apps', desc: 'SignalR & WebSockets for chat and live dashboards.' },
+    { icon: 'Layers', title: 'Integrations', desc: 'Zoom, Microsoft Teams, Cisco Webex, Google Meet, NELC.' },
+    { icon: 'FileText', title: 'Reporting', desc: 'QuestPDF with live data and custom templates.' },
+    { icon: 'Smartphone', title: 'Cross-Platform Apps', desc: 'Mobile apps with .NET MAUI.' },
+    { icon: 'Layout', title: 'Frontend Development', desc: 'Angular reactive forms, dashboards, and UI components.' },
+    { icon: 'Database', title: 'Database Migration', desc: 'Large-scale data migration and database optimization.' },
+    { icon: 'Users', title: 'Agile', desc: 'Agile methodologies with Azure DevOps and Git workflows.' },
+  ],
+  experience: [
+    {
+      company: 'EXAB Almuhtarifah for Information Technology',
+      role: 'Full Stack Developer',
+      dates: '11/2023 – 09/2025',
+      location: 'Riyadh, Saudi Arabia',
+      details: [
+        'Performance benchmarking & optimization.',
+        'Entity Framework for data access in C#.',
+        'ASP.NET Core RESTful APIs.',
+        'Reusable Angular components & services.',
+        'QuestPDF dynamic charts & reporting.',
+        'Integrations with Zoom, Microsoft Teams, Cisco Webex.',
+        'Large-scale data migration.',
+        'Real-time apps using SignalR.',
+        '.NET MAUI apps.',
+      ],
+    },
+    {
+      company: 'Abnour Software House',
+      role: 'Backend Developer',
+      dates: '07/2022 – 11/2022',
+      location: 'New Cairo, Egypt',
+      details: [
+        'Backend development using C# & RESTful APIs.',
+        'Mobile backend development.',
+        'SQL database design.',
+        'Maintained ERP system.',
+      ],
+    },
+  ],
+  projects: [
+    {
+      name: 'Exab LMS',
+      dates: '12/2023 – 01/2025',
+      location: 'Riyadh, Saudi Arabia',
+      image: '/sss.jpg',
+      details: [
+        'Refactored for scalability & performance.',
+        'Built Digital Library module.',
+        'Discussion section for students.',
+        'QuestPDF reporting with live data.',
+        'Angular forms, data tables & validations.',
+        'Student Evaluation Module APIs & workflows.',
+        'NELC compliance collaboration.',
+        'Integrated Zoom & Google Meet for classes.',
+      ],
+    },
+    {
+      name: 'Riyadh Municipality Employee Violations System',
+      dates: '01/2025 – 06/2025',
+      location: 'Riyadh, Saudi Arabia',
+      image: '/sss.jpg',
+      details: [
+        'Developed with ASP.NET Core & C#.',
+        'RESTful APIs for violations & committees.',
+        'Digital signature functionality.',
+        'Real-time notifications with SignalR.',
+        'PDF & Excel reporting.',
+        'Agile + Azure DevOps + Git workflows.',
+      ],
+    },
+    {
+      name: 'Ticketing System',
+      dates: '01/2025 – 04/2025',
+      location: 'Riyadh, Saudi Arabia',
+      image: '/sss.jpg',
+      details: [
+        'RBAC with ASP.NET Identity & OAuth2.',
+        'Real-time chat & notifications with SignalR.',
+        'Custom reporting dashboards (PDF/Excel).',
+        'Error-handling & logging middleware.',
+      ],
+    },
+  ],
+  education: [
+    {
+      degree: "Bachelor's degree in Computer Science",
+      university: 'Misr International University',
+      graduation: 'Jul 2022',
+    },
+  ],
+  courses: [
+    {
+      title: 'ASP Full Stack Developer Diploma',
+      provider: 'CLS Learning Solutions',
+      dates: '07/2023 – 11/2023',
+      hours: 180,
+      modules: [
+        'Programming in HTML5, JavaScript & CSS3 (40h)',
+        'C# Programming (40h)',
+        'Developing ASP.NET Web Applications (40h)',
+        'ASP Core Web APIs (40h)',
+        'SQL Essentials (20h)',
+      ],
+    },
+  ],
+  skills: [
+    { name: 'C#', level: 5 },
+    { name: 'JavaScript', level: 4 },
+    { name: 'Entity Framework', level: 5 },
+    { name: 'MongoDB', level: 3 },
+    { name: 'ASP.NET Core', level: 5 },
+    { name: 'Angular', level: 4 },
+    { name: 'SignalR', level: 4 },
+    { name: 'Azure DevOps', level: 4 },
+    { name: 'OOP', level: 5 },
+    { name: 'SQL Server', level: 5 },
+    { name: '.NET MAUI', level: 3 },
+    { name: 'QuestPDF', level: 4 },
+    { name: 'GitHub', level: 4 },
+    { name: 'Microsoft Azure', level: 3 },
+  ],
+};
+
+
